@@ -1,12 +1,17 @@
 spring:
     datasource:
-      url: jdbc:mysql://localhost:3306/test1?useSSL=false&serverTimezone=UTC
+      url: jdbc:mysql://localhost:3306/shiro?useSSL=false&serverTimezone=UTC
       username: root
-      password: 1997
+      password: 123456
       driver-class-name: com.mysql.cj.jdbc.Driver
     thymeleaf:
        cache: false
        mode: LEGACYHTML5
+    application:
+      name: springboot-mybatis-shiro
 mybatis:
   type-aliases-package: com.pjb.entity
   mapper-locations: classpath*:com.pjb.mapper/*.xml
+
+server:
+  port: 16101
